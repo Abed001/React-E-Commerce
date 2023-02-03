@@ -1,39 +1,84 @@
 .App {
   font-family: 'Urbanist',sans-serif;
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width:100%;
+  background-color:white;
+  height: 60px;
+}
+.left-nav
+{
+  margin-top: 12px;
+  display: flex;
+  flex: 1;
+}
+.left-nav span
+{
+  margin-top: 12px;
+  margin-left: 20px;
+  font-size:19px;
+  cursor: pointer;
+  
+}
+
+
+.right-nav
+{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.middle-nav
+{
+  margin-top: 20px;
+  flex: 1;
+}
+.search-container{
+  margin-left: 50px;
+  margin-top: 12px;
+  padding: 3px;
+  border: 1px solid lightgray;
+  height: 20px;
+  width: 170px;
+}
+.search-container i{
+  color: grey;
+ font-size: 10px;
+}
+.inside-search{
+
+  justify-content: space-between;
+  height: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  width: 100%;
+
+}
+.para-search{
+  color: grey;
+  display: flex;
+  width:8px;
 }
 
-.App-link {
-  color: #61dafb;
+.para-middle{
+
+font-weight: bold;
+  font-size: 40px;
+}
+.input-search{
+  border: 0;
+  width: 80%;
+  appearance: none;
+ outline:none!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
