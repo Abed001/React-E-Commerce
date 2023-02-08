@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Home from './Pages/Home';
+import Announcement from './Components/Announcement';
 import Navbar from './Components/Navbar';
+import Slider from './Components/Slider';
+
+
 
 function App() {
   return (
     <div className="App">
+      <Announcement/>
      <Navbar/>
+     <Slider/>
     </div>
   );
 }
