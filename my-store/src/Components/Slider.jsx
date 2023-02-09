@@ -1,5 +1,4 @@
 
-import pink from './images/pink.png'
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 
@@ -43,11 +42,11 @@ export default function Slider() {
                 {
                     sliderItems.map(item => {
                         return (
-                            <Carousel.Item key={item.id} interval={1000}>
+                            <Carousel.Item key={item.id} >
                                 <div className='wrapper'>
                                     <div className='slide'>
                                         <div className='image-container'>
-                                            <img className="image" src={pink} alt="" />
+                                            <img className="image" src={item.img} alt="" />
                                         </div>
 
                                         <div className='info-container'>
