@@ -51,7 +51,7 @@ export default function Categories() {
   return (
      <div className="Category-container">
      {categoryItems.map(item=>(
-          <CategoryItem item={item}/>
+          <CategoryItem item={item} key={item.id}/>
         
         
       ))}

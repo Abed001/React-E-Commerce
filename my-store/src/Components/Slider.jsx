@@ -7,7 +7,7 @@ import { Carousel } from 'react-bootstrap'
 const sliderItems = [
     {
         id: 1,
-        img: "https://images.pexels.com/photos/5719971/pexels-photo-5719971.jpeg?auto=compress&cs=tinysrgb&w=600",
+        img: "https://img.freepik.com/free-photo/woman-with-heels-hat_1187-1657.jpg?w=360&t=st=1676005056~exp=1676005656~hmac=2c154b4db40738691b8e8ca31951f8e8da56671ea51b46602e888dfa33597d69",
         title: "SUMMER SALE",
         desc: "DON'T COMPROMISE SALE GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "f5fafd",
@@ -38,7 +38,7 @@ const sliderItems = [
 export default function Slider() {
     return (
         <div className='carousel-container'>
-            <Carousel>
+            <Carousel className="Carousel">
                 {
                     sliderItems.map(item => {
                         return (
@@ -46,7 +46,7 @@ export default function Slider() {
                                 <div className='wrapper'>
                                     <div className='slide'>
                                         <div className='image-container'>
-                                            <img className="image" src={item.img} alt="" />
+                                            <img className="image" src={item.img} alt=""/>
                                         </div>
 
                                         <div className='info-container'>
