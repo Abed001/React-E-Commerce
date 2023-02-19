@@ -1,25 +1,17 @@
 
 import './App.css';
-import Announcement from './Components/Announcement';
-import Categories from './Components/Categories';
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar';
-import Newsletter from './Components/Newsletter';
-import Products from './Components/Products';
-import Slider from './Components/Slider';
+import Home from './Pages/Home';
+import Login from './Pages/Login';
+import Product from './Pages/Product';
+import ProductList from './Pages/ProductList';
+import Register from './Pages/Register';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Announcement/>
-     <Navbar/>
-     <Slider/>
-     <Categories/>
-     <Products/>
-     <Newsletter/>
-     <Footer/>
+      <Login/>
     </div>
   );
 }

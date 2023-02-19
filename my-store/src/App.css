@@ -93,7 +93,7 @@ i {
 
 }
 
-.announce p {
+.announce span {
   color: white;
   font-weight: 500;
   font-size: 14px;
@@ -422,10 +422,11 @@ i {
   text-align: left;
   flex: 1;
 }
-.footer-title-right{
-font-weight: bold;
-font-size: 20px;
-text-align: left;
+
+.footer-title-right {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
 }
 
 .footer-right i {
@@ -481,4 +482,279 @@ text-align: left;
 .footer-icon-container i {
   scale: 2;
 
+}
+
+.productList-title {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.filter {
+  margin: 20px;
+}
+
+.filter span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-select {
+  padding: 5px;
+  margin-right: 20px;
+
+}
+
+.filter-select-size {
+  margin-left: 20px;
+}
+
+.filter-select-sort {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+
+.details-container {
+  text-align: left;
+  height: 100vh;
+  display: flex;
+}
+
+.product-details {
+  padding: 12px;
+  flex: 1;
+}
+
+.details-container img {
+  padding: 20px;
+  object-fit: cover;
+  flex: 1;
+}
+
+.detail-price {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.circle1 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+
+}
+
+.circle2 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+
+}
+
+.circle3 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.color-size-filter-container {
+  align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-container {
+  width: 140px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.size-container {
+  width: 130px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-counter-container {
+  align-items: center;
+  width: 45%;
+  margin-top: 20px;
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.icon-counter-container {
+  margin-right: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.counter {
+  margin: 0 10px;
+  padding: 3px 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.counter-btn button {
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid teal;
+}
+
+.counter-btn:hover {
+  background-color: #f8f4f4;
+}
+
+.Register-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)),
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Register-wrapper {
+  margin: 10px;
+  padding: 20px;
+  width: 500px;
+  background-color: white;
+
+}
+
+.Register-container input {
+  flex: 1;
+  padding: 5px;
+  margin: 10px;
+
+}
+
+.Register-container h4 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.Register-container p {
+  text-align: left;
+  font-size: 12px;
+  margin: 20px 10px;
+
+}
+
+.create-btn-container{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 10px;
+}
+.create-btn-container Button{
+  width: 40%;
+  border: none;
+  padding: 15px 20px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+.Login-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)),
+    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.Login-container input {
+  font-size: 15px;
+  flex: 1;
+  padding: 5px;
+  margin: 10px;
+
+}
+
+.Login-container h4 {
+  font-weight: 400;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.Login-container a {
+  text-align: left;
+  font-size: 12px;
+  margin: 5px 10px;
+  color: black;
+
+}
+
+.create-btn-container{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 10px;
+}
+.create-btn-container Button{
+  font-weight: 400;
+  font-size: 15px;
+  margin: 5px 0px;
+  width: 40%;
+  border: none;
+  padding: 10px 15px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+
+.Login-wrapper {
+  margin: 10px;
+  padding: 20px;
+  width: 25%;
+  background-color: white;
+
+}
+.login-link-container{
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
 }
