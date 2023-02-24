@@ -1,7 +1,23 @@
 
 import React from 'react'
+import {Link} from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
+
 
 export default function Navbar() {
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/register");
+  }
+
+  function handleClickCart() {
+    navigate("/cart");
+  }
+ 
+ 
+
   return (
     <div className="navbar-container">
       <div className='left-nav'>
@@ -22,9 +38,9 @@ export default function Navbar() {
         </div>
      
         <div className='right-nav'>
-        <span>REGISTER</span>
-        <span>SIGN IN</span>
-        <i class="fa-solid fa-cart-shopping"></i>
+          <Link className='right-nav-links' to="/register">REGISTER</Link>
+          <Link className='right-nav-links' to="/login">SIGN IN</Link>
+        <i onClick={handleClickCart} class="fa-solid fa-cart-shopping"></i>
         </div>
       
      

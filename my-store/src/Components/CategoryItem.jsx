@@ -1,9 +1,17 @@
 import React from 'react'
+import {useNavigate } from 'react-router-dom'
 
 
 
 
 export default function CategoryItem({item}) {
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/productlist");
+  }
+
   return (
     <div className ="category-item-container">
       <div className = "category-item-inner-container">
@@ -12,7 +20,7 @@ export default function CategoryItem({item}) {
        src={item.img} alt="" />
        <div className ="category-item-info-container">
       <span className =" category-item-span">{item.title}</span>
-      <button className = "category-item-btn">SHOP NOW</button>
+      <button onClick={handleClick} className = "category-item-btn">SHOP NOW</button>
       </div>
       </div>
        </div>

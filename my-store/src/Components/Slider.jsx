@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -36,6 +37,14 @@ const sliderItems = [
 ]
 
 export default function Slider() {
+
+    const navigate = useNavigate();
+
+    function handleClick() {
+      navigate("/productlist");
+    }
+ 
+    
     return (
         <div className='carousel-container'>
             <Carousel className="Carousel">
@@ -43,7 +52,7 @@ export default function Slider() {
                     sliderItems.map(item => {
                         return (
                             <Carousel.Item key={item.id} >
-                                <div className='wrapper'>
+                                <div className='slider-wrapper'>
                                     <div className='slide'>
                                         <div className='image-container'>
                                             <img className="image" src={item.img} alt=""/>
@@ -53,7 +62,7 @@ export default function Slider() {
                                             <h1 className='title-info'>SUMMER SALE</h1>
                                             <p className='para-info'>DON'T COMPROMISE SALE GET FLAT 30% OFF FOR NEW ARRIVALS.</p>
                                             <div className='btn-container'>
-                                                <button className='btn-iinfo'>SHOP NOW</button>
+                                                <button className='btn-iinfo' onClick={handleClick}>SHOP NOW</button>
                                             </div>
 
                                         </div>
